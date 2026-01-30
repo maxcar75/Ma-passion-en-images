@@ -1,0 +1,124 @@
+{
+  "heroes": [
+    {
+      "id": "iron-man",
+      "name": "Iron Man",
+      "heroImage": "img/iron man.jpg",
+      "cutoutImage": "img/ironman-cutout.png",
+      "cutoutAlt": "Iron Man en armure rouge et or volant vers l'avant",
+      "title": "Tony Stark - Le Génie Visionnaire",
+      "paragraphs": [
+        "Tony Stark incarne l'évolution d'un industriel arrogant en héros altruiste. Milliardaire, génie et philanthrope, il a révolutionné le concept de super-héros en créant une armure technologique capable de rivaliser avec les êtres les plus puissants de l'univers. Son parcours débute tragiquement en Afghanistan, où il construit sa première armure dans une grotte pour échapper à ses ravisseurs, prenant alors conscience des dégâts causés par son entreprise d'armement.",
+        "Au fil des années, Tony a développé plus de 85 modèles d'armures différents, chacune plus sophistiquée que la précédente. De la Mark I rudimentaire à la nanotechnologie de la Mark L, son génie n'a cessé d'innover. Sa relation avec Pepper Potts et son rôle de mentor pour Peter Parker ont révélé sa capacité à s'ouvrir aux autres malgré son ego surdimensionné.",
+        "Le sacrifice ultime de Tony Stark dans Avengers: Endgame reste l'un des moments les plus marquants de l'histoire du MCU. En utilisant le Gant de l'Infini pour éliminer Thanos et son armée, il prouve qu'il est devenu l'homme capable de faire le sacrifice que personne d'autre ne pouvait faire, accomplissant ainsi son arc de rédemption complet."
+      ],
+      "scenes": [
+        {
+          "image": "img/ironman-scene.jpg",
+          "alt": "Iron Man blessé levant un gant lumineux sur un champ de bataille en ruines",
+          "caption": "Le sacrifice ultime",
+          "description": "Tony Stark dans ses derniers instants, levant le Gant de l'Infini pour éliminer Thanos et son armée. Cette scène iconique d'Avengers: Endgame marque l'aboutissement de son arc narratif, où le milliardaire égocentrique devient le héros ultime prêt à tout sacrifier pour sauver l'univers.",
+          "credit": "© Marvel Studios"
+        },
+        {
+          "image": "img/ironman-scene2.jpeg",
+          "alt": "Tony Stark en cours d'équipement de l'armure d'Iron Man dans son atelier",
+          "caption": "L'assemblage de l'armure",
+          "description": "Tony Stark dans son atelier high-tech, entouré de bras robotiques qui assemblent son armure Mark sur son corps. Cette séquence emblématique montre le processus fascinant de transformation de l'homme en super-héros grâce à la technologie de pointe développée par Stark Industries.",
+          "credit": "© Marvel Studios"
+        }
+      ],
+      "position": "left"
+    },
+    {
+      "id": "spider-man",
+      "name": "Spider-Man",
+      "heroImage": "img/spiderman.jpg",
+      "cutoutImage": "img/spiderman-cutout.png",
+      "cutoutAlt": "Plusieurs Spider-Man en costume rouge et bleu bondissant dans les airs",
+      "title": "Peter Parker - L'Ami du Quartier",
+      "paragraphs": [
+        "Peter Parker incarne le héros le plus humain et accessible de l'univers Marvel. Après avoir été mordu par une araignée radioactive, cet adolescent new-yorkais ordinaire a développé des capacités extraordinaires : force surhumaine, agilité acrobatique, sens d'araignée qui l'avertit du danger, et la capacité de s'accrocher aux murs. Mais c'est la mort tragique de son oncle Ben qui façonne véritablement son destin, lui enseignant que \"un grand pouvoir implique de grandes responsabilités\".",
+        "Contrairement aux milliardaires, dieux et super-soldats qui composent les Avengers, Spider-Man doit jongler entre ses devoirs de lycéen, ses problèmes d'argent, et sa mission de protéger New York. Cette dualité rend Peter Parker particulièrement attachant : il rate des contrôles parce qu'il combat le crime, perd des emplois pour sauver des innocents, et sacrifie constamment sa vie personnelle pour le bien collectif.",
+        "Le multivers de Spider-Man révèle l'importance universelle de ce héros. Que ce soit Peter Parker, Miles Morales ou les nombreuses variantes à travers les dimensions, chaque Spider-Man partage les mêmes valeurs fondamentales : persévérance, humour face au danger, et un sens inébranlable du devoir. Son costume iconique rouge et bleu est devenu le symbole de l'espoir pour des millions de personnes à travers le monde."
+      ],
+      "scenes": [
+        {
+          "image": "img/spiderman-scene.jpg",
+          "alt": "Spider-Man retenant un ferry en train de se fendre avec ses toiles",
+          "caption": "Sauvetage héroïque du ferry",
+          "description": "Peter Parker utilise toute sa force et ses toiles pour maintenir ensemble un ferry qui se sépare en deux, mettant en péril des centaines de passagers. Cette scène de Spider-Man: Homecoming démontre sa détermination à sauver des vies malgré ses limites, incarnant parfaitement le jeune héros qui refuse d'abandonner même face à l'impossible.",
+          "credit": "© Marvel Studios"
+        },
+        {
+          "image": "img/spiderman-scene2.jpg",
+          "alt": "Trois Spider-Man en position de combat sur une structure métallique de nuit",
+          "caption": "La rencontre du multivers",
+          "description": "Les trois Spider-Man (Tom Holland, Andrew Garfield et Tobey Maguire) réunis dans Spider-Man: No Way Home. Cette image emblématique capture le moment où les différentes générations de Spider-Man s'unissent, prouvant que peu importe l'univers, l'esprit de Spider-Man reste le même : courage, sacrifice et espoir.",
+          "credit": "© Marvel Studios"
+        }
+      ],
+      "position": "right"
+    },
+    {
+      "id": "black-panther",
+      "name": "Black Panther",
+      "heroImage": "img/black panthère.jpg",
+      "cutoutImage": "img/blackpanther-cutout.png",
+      "cutoutAlt": "Black Panther en armure noire, les bras croisés sur la poitrine",
+      "title": "T'Challa - Gardien du Wakanda",
+      "paragraphs": [
+        "T'Challa, roi du Wakanda et incarnation de la Panthère Noire, représente l'équilibre parfait entre tradition ancestrale et progrès technologique. Héritier d'une lignée royale millénaire, il porte le manteau de protecteur de son peuple tout en naviguant dans les complexités de la politique mondiale. Son costume, tissé de vibranium et intégrant la technologie la plus avancée de la planète, symbolise cette fusion unique entre l'ancien et le moderne.",
+        "Le Wakanda sous son règne est une merveille cachée au cœur de l'Afrique : une nation technologiquement supérieure à tout autre pays, préservée des colonisateurs grâce à son isolationnisme stratégique. Le vibranium, métal extraterrestre découvert sur leur territoire, a permis au Wakanda de développer des innovations révolutionnaires dans les domaines de la médecine, de l'énergie et de la défense. T'Challa doit constamment décider s'il faut maintenir le secret du Wakanda ou partager ses ressources avec le monde.",
+        "Au-delà de ses capacités physiques surhumaines obtenues grâce à l'herbe en forme de cœur, T'Challa est un stratège brillant, un diplomate habile et un combattant exceptionnel. Son combat contre Erik Killmonger révèle les tensions profondes entre isolationnisme et interventionnisme, tradition et changement. La mort prématurée de Chadwick Boseman a créé un vide immense, mais l'héritage de T'Challa et ce qu'il représente - fierté, dignité et excellence - continue d'inspirer des millions de personnes."
+      ],
+      "scenes": [
+        {
+          "image": "img/blackpanther-scene.jpg",
+          "alt": "Black Panther en tenue blanche devant un ciel nocturne violet",
+          "caption": "Cérémonie du couronnement",
+          "description": "T'Challa lors de la cérémonie traditionnelle du couronnement au Wakanda, vêtu de blanc sous un ciel crépusculaire violet. Ce moment rituel symbolise la transition entre l'homme et le roi, entre T'Challa et la Panthère Noire, incarnant la connexion spirituelle avec les ancêtres et les traditions séculaires du Wakanda.",
+          "credit": "© Marvel Studios"
+        },
+        {
+          "image": "img/blackpanther-scene2.jpg",
+          "alt": "Black Panther combattant un guerrier armé dans l'eau devant une falaise",
+          "caption": "Duel rituel aux chutes",
+          "description": "Le combat rituel de T'Challa contre M'Baku aux chutes sacrées du Wakanda. Cette tradition ancestrale permet à tout membre d'une tribu wakandaise de défier le roi pour le trône. Le combat se déroule sans l'aide de l'herbe en forme de cœur, testant la valeur pure du guerrier dans un duel à mains nues chargé de symbolisme.",
+          "credit": "© Marvel Studios"
+        }
+      ],
+      "position": "left"
+    },
+    {
+      "id": "captain-america",
+      "name": "Captain America",
+      "heroImage": "img/captain américa.jpg",
+      "cutoutImage": "img/captainamerica-cutout.png",
+      "cutoutAlt": "Captain America en costume bleu étoilé marchant vers l'avant",
+      "title": "Steve Rogers - Symbole Vivant de l'Héroïsme",
+      "paragraphs": [
+        "Steve Rogers incarne les valeurs héroïques dans leur forme la plus pure. Avant même de devenir Captain America grâce au sérum du super-soldat, ce jeune homme frêle de Brooklyn possédait déjà le cœur d'un héros. Refusé par l'armée à cinq reprises en raison de sa constitution fragile, il n'a jamais abandonné son désir de servir son pays. Le Dr. Abraham Erskine a vu en lui non pas ce qu'il était physiquement, mais ce qu'il représentait moralement : un homme bon qui resterait bon même avec un pouvoir immense.",
+        "Son bouclier en vibranium est devenu l'un des symboles les plus iconiques de l'univers Marvel, représentant à la fois la défense et les principes inébranlables. Congelé pendant près de 70 ans après avoir sacrifié sa vie pour détourner un avion rempli d'explosifs, Steve se réveille dans un monde qu'il ne reconnaît plus. Malgré ce décalage temporel et culturel, il reste fidèle à ses convictions, refusant de compromettre ses valeurs même face à ses alliés.",
+        "Le conflit avec Tony Stark dans Civil War illustre parfaitement son caractère : il choisit de protéger son ami Bucky Barnes plutôt que de se soumettre aveuglément à l'autorité. Cette loyauté indéfectible envers ses principes et ses proches définit Captain America. Son départ à la fin d'Endgame, choisissant de vivre la vie qu'on lui avait volée avec Peggy Carter, montre qu'après avoir tout donné, même les héros méritent leur happy ending."
+      ],
+      "scenes": [
+        {
+          "image": "img/captainamerica-scene.jpg",
+          "alt": "Captain America tenant son bouclier et un marteau sur un champ de bataille",
+          "caption": "Digne de Mjolnir",
+          "description": "Le moment épique où Steve Rogers brandit à la fois son bouclier et Mjolnir, le marteau de Thor, prouvant qu'il est digne de le soulever. Cette scène d'Avengers: Endgame confirme ce que les fans soupçonnaient depuis des années : la pureté morale et le courage inébranlable de Captain America le rendent digne du pouvoir d'Asgard.",
+          "credit": "© Marvel Studios"
+        },
+        {
+          "image": "img/captainamerica-scene2.jpg",
+          "alt": "Captain America affrontant un double de lui-même bouclier contre bouclier dans un bâtiment vitré",
+          "caption": "Face à son passé",
+          "description": "Steve Rogers de 2023 affronte sa version de 2012 dans Avengers: Endgame lors du voyage temporel. Ce combat symbolique montre l'évolution du personnage : le Captain America de 2012, encore idéaliste et confiant dans le système, face au Steve Rogers désabusé qui a vécu Civil War et compris la complexité du monde.",
+          "credit": "© Marvel Studios"
+        }
+      ],
+      "position": "right"
+    }
+  ]
+}

@@ -1,0 +1,832 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  background: #0a0a0f;
+  line-height: 1.6;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Thèmes de page par héros */
+
+.theme-iron-man {
+  background: radial-gradient(circle at top left, rgba(237, 29, 36, 0.45), transparent 55%),
+              radial-gradient(circle at bottom right, rgba(255, 215, 0, 0.25), transparent 55%);
+}
+
+.theme-spider-man {
+  background: radial-gradient(circle at top left, rgba(220, 53, 69, 0.4), transparent 55%),
+              radial-gradient(circle at bottom right, rgba(25, 135, 84, 0.35), transparent 55%);
+}
+
+.theme-black-panther {
+  background: radial-gradient(circle at top left, rgba(119, 20, 240, 0.5), transparent 55%),
+              radial-gradient(circle at bottom right, rgba(56, 189, 248, 0.3), transparent 55%);
+}
+
+.theme-captain-america {
+  background: radial-gradient(circle at top left, rgba(37, 99, 235, 0.5), transparent 55%),
+              radial-gradient(circle at bottom right, rgba(239, 68, 68, 0.35), transparent 55%);
+}
+
+.theme-contribute {
+  background: radial-gradient(circle at top left, rgba(237, 29, 36, 0.4), transparent 55%),
+              radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.4), transparent 55%);
+}
+
+/* En-tête et navigation */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(10, 10, 15, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid #ed1d24;
+  padding: 18px 32px;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 1.7em;
+  color: #ed1d24;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+nav a:hover {
+  color: #ed1d24;
+  border-bottom-color: #ed1d24;
+}
+
+/* Contenu principal */
+
+main {
+  margin-top: 110px;
+}
+
+/* Sections héros (bannières) */
+
+.hero-section {
+  position: relative;
+  height: 52vh;
+  background-attachment: fixed;
+  background-position: center 25%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+  cursor: pointer;
+}
+
+.hero-section::before:hover {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+}
+
+.hero-section h2 {
+  position: relative;
+  z-index: 1;
+  font-size: 3.2em;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  text-shadow:
+    0 0 12px rgba(255, 255, 255, 0.85),
+    0 0 25px rgba(237, 29, 36, 0.8),
+    0 0 45px rgba(237, 29, 36, 0.6);
+  text-align: center;
+}
+
+/* Sections de contenu par héros */
+
+.content-section {
+  margin: 0;
+  padding: 70px 40px;
+  min-height: 520px;
+  border-top: 3px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Fond spécifique à chaque héros */
+
+.content-section.iron-man {
+  background: linear-gradient(135deg, #200204 0%, #8a0608 40%, #3b2204 100%);
+  border-top-color: rgba(237, 29, 36, 0.7);
+}
+
+.content-section.spider-man {
+  background: linear-gradient(135deg, #220307 0%, #b4202e 40%, #114c92 100%);
+  border-top-color: rgba(180, 32, 46, 0.7);
+}
+
+.content-section.black-panther {
+  background: linear-gradient(135deg, #05030a 0%, #1a0554 40%, #3f2a4b 100%);
+  border-top-color: rgba(100, 78, 174, 0.7);
+}
+
+.content-section.captain-america {
+  background: linear-gradient(135deg, #030713 0%, #114c92 40%, #7e1f27 100%);
+  border-top-color: rgba(37, 99, 235, 0.7);
+}
+
+/* Mise en page du texte et des vignettes */
+
+.content-layout {
+  max-width: 1024px;
+  margin: 0 auto 60px auto;
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 60px;
+  align-items: stretch;
+  position: relative;
+}
+
+.content-layout.mirror {
+  grid-template-columns: minmax(0, 1fr) 280px;
+}
+
+.scenes-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: flex-start;
+}
+
+.scenes-column.mirror {
+  order: 2;
+}
+
+.text-column {
+  position: relative;
+}
+
+.text-column.mirror {
+  order: 1;
+}
+
+/* Ajustement de la position des layouts selon le héros */
+
+.iron-man .content-layout {
+  margin-left: 50px;
+  margin-right: auto;
+}
+
+.spider-man .content-layout {
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.black-panther .content-layout {
+  margin-left: 50px;
+  margin-right: auto;
+}
+
+.captain-america .content-layout {
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+/* Panneaux de texte */
+
+.text-panel {
+  background: rgba(255, 255, 255, 0.04);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 32px 40px;
+  height: 100%;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+}
+
+.text-panel h3 {
+  font-size: 1.9em;
+  margin-bottom: 22px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.text-panel p {
+  font-size: 1.02em;
+  line-height: 1.9;
+  margin-bottom: 18px;
+  color: rgba(255, 255, 255, 0.92);
+  text-align: justify;
+}
+
+/* Vignettes de scènes */
+
+.scene-item {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  border: 2px solid transparent;
+}
+
+.scene-item:hover,
+.scene-item:focus {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+  outline: 2px solid rgba(237, 29, 36, 0.6);
+  outline-offset: 2px;
+}
+
+.scene-item img {
+  width: 100%;
+  height: 260px;
+  display: block;
+  object-fit: cover;
+}
+
+.scene-credit {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 0.8em;
+  color: #ffffff;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
+}
+
+/* Bordures colorées selon les scènes et les héros */
+
+.iron-man .scene-item:nth-child(1) {
+  border-color: rgba(237, 29, 36, 0.3);
+}
+
+.iron-man .scene-item:nth-child(2) {
+  border-color: rgba(255, 215, 0, 0.3);
+}
+
+.spider-man .scene-item:nth-child(1) {
+  border-color: rgba(186, 87, 12, 0.3);
+}
+
+.spider-man .scene-item:nth-child(2) {
+  border-color: rgba(220, 53, 69, 0.3);
+}
+
+.black-panther .scene-item:nth-child(1) {
+  border-color: rgba(119, 20, 240, 0.3);
+}
+
+.black-panther .scene-item:nth-child(2) {
+  border-color: rgba(147, 51, 234, 0.3);
+}
+
+.captain-america .scene-item:nth-child(1) {
+  border-color: rgba(28, 80, 193, 0.3);
+}
+
+.captain-america .scene-item:nth-child(2) {
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+/* Personnages détourés */
+
+.cutout-wrapper {
+  position: absolute;
+  top: -60px;
+  bottom: -60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cutout-right {
+  right: -300px;
+}
+
+.cutout-left {
+  left: -300px;
+}
+
+.hero-cutout {
+  max-width: 300px;
+  width: 200%;
+  height: auto;
+  display: block;
+}
+
+/* Ombres colorées des détourés */
+
+.iron-man .hero-cutout {
+  filter: drop-shadow(0 18px 45px rgba(237, 29, 36, 0.8));
+}
+
+.spider-man .hero-cutout {
+  filter: drop-shadow(0 18px 45px rgba(220, 53, 69, 0.8));
+}
+
+.black-panther .hero-cutout {
+  filter: drop-shadow(0 18px 45px rgba(119, 20, 240, 0.8));
+}
+
+.captain-america .hero-cutout {
+  filter: drop-shadow(0 18px 45px rgba(37, 99, 235, 0.8));
+}
+
+/* Section contribution (formulaire) */
+
+.contribute-section {
+  margin: 70px 0 0 0;
+  border-top: 3px solid rgba(237, 29, 36, 0.5);
+  padding: 80px 40px;
+  background: linear-gradient(135deg, #080811 0%, #1a1520 50%, #080811 100%);
+}
+
+.contribute-section h2 {
+  font-size: 2.1em;
+  color: #ed1d24;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 18px;
+  letter-spacing: 2px;
+}
+
+.contribute-section > p {
+  text-align: center;
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+.contribute-card {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 25px 35px;
+  border-radius: 20px;
+  background: radial-gradient(circle at top, rgba(255, 255, 255, 0.03), transparent 60%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.8),
+    0 0 0 1px rgba(255, 255, 255, 0.03);
+  position: relative;
+  overflow: hidden;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.form-header-title {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.form-status-pill {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(237, 29, 36, 0.15);
+  border: 1px solid rgba(237, 29, 36, 0.6);
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffb3b8;
+}
+
+.contribute-card form {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1.1fr 1.1fr;
+  gap: 25px 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+label {
+  margin-bottom: 6px;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #dddddd;
+}
+
+.required {
+  color: #ed1d24;
+  margin-left: 4px;
+}
+
+input,
+textarea {
+  padding: 12px 14px;
+  background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.8));
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.95em;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s, background 0.3s, transform 0.15s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #ed1d24;
+  background: radial-gradient(circle at top left, rgba(237, 29, 36, 0.18), rgba(0, 0, 0, 0.9));
+  box-shadow:
+    0 0 0 1px rgba(237, 29, 36, 0.6),
+    0 0 25px rgba(237, 29, 36, 0.35);
+  transform: translateY(-1px);
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.help-text {
+  font-size: 0.75em;
+  color: #888888;
+  margin-top: 5px;
+}
+
+.error-message {
+  color: #ed1d24;
+  font-size: 0.8em;
+  margin-top: 4px;
+  min-height: 18px;
+}
+
+input.error,
+textarea.error {
+  border-color: #ed1d24;
+  background: rgba(237, 29, 36, 0.12);
+}
+
+.submit-btn {
+  grid-column: 1 / -1;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 999px;
+  font-size: 0.95em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  justify-self: center;
+  color: #ffffff;
+  background: linear-gradient(120deg, #ed1d24 0%, #c41017 40%, #ff3b47 100%);
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.9),
+    0 0 25px rgba(237, 29, 36, 0.65);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 25px 45px rgba(0, 0, 0, 0.95),
+    0 0 35px rgba(237, 29, 36, 0.9);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.8),
+    0 0 18px rgba(237, 29, 36, 0.7);
+}
+
+/* Zone de prévisualisation */
+
+.preview-zone {
+  margin-top: 35px;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 16px;
+  border: 1px dashed rgba(237, 29, 36, 0.6);
+  display: none;
+}
+
+.preview-zone.active {
+  display: block;
+}
+
+.preview-zone h3 {
+  color: #ed1d24;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1em;
+}
+
+.success-message {
+  margin-top: 18px;
+  padding: 12px 18px;
+  background: rgba(46, 204, 113, 0.12);
+  border-radius: 999px;
+  border: 1px solid #2ecc71;
+  color: #2ecc71;
+  text-align: center;
+  font-size: 0.85em;
+  display: none;
+}
+
+
+
+footer {
+  margin-top: 0;
+  border-top: 2px solid rgba(237, 29, 36, 0.5);
+  padding: 40px;
+  background: #0a0a0f;
+  text-align: center;
+}
+
+footer a {
+  color: #aaa;
+  text-decoration: underline;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ed1d24;
+}
+
+.copyright {
+  margin-top: 15px;
+  font-size: 0.85em;
+  color: #666;
+}
+
+/* Modales (mentions légales et zoom) */
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  background: #1a1a25;
+  padding: 40px;
+  border-radius: 8px;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2em;
+  color: #fff;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.modal-close:hover {
+  color: #ed1d24;
+}
+
+.modal-content h2 {
+  color: #ed1d24;
+  margin-bottom: 20px;
+}
+
+.modal-content h3 {
+  color: #ff3b47;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  line-height: 1.7;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+/* Modale de zoom image */
+
+.zoom-modal .modal-content {
+  background: transparent;
+  padding: 0;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.zoom-modal .close-zoom-btn {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  z-index: 2001;
+}
+
+.zoom-modal img {
+  max-width: 100%;
+  max-height: 75vh;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.zoom-description {
+  max-width: 800px;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 20px 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(237, 29, 36, 0.3);
+  text-align: center;
+}
+
+.zoom-description p {
+  color: #e0e0e0;
+  line-height: 1.7;
+  font-size: 0.95em;
+  margin: 0;
+}
+
+/* Responsive 1024px */
+
+@media (max-width: 1024px) {
+  .content-layout,
+  .content-layout.mirror {
+    max-width: 960px;
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 40px;
+  }
+
+  .cutout-right {
+    right: -190px;
+  }
+
+  .cutout-left {
+    left: -190px;
+  }
+
+  .hero-cutout {
+    max-width: 260px;
+  }
+
+  header {
+    padding: 14px 20px;
+  }
+
+  header h1 {
+    font-size: 1.4em;
+  }
+
+  nav ul {
+    gap: 14px;
+  }
+
+  main {
+    margin-top: 100px;
+  }
+
+  .hero-section h2 {
+    font-size: 2.4em;
+    letter-spacing: 4px;
+  }
+
+  .content-section {
+    padding: 50px 24px;
+  }
+
+  .content-layout,
+  .content-layout.mirror {
+    max-width: 700px;
+    display: block;
+    margin: 0 auto 50px auto;
+  }
+
+  .iron-man .content-layout,
+  .spider-man .content-layout,
+  .black-panther .content-layout,
+  .captain-america .content-layout {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text-column,
+  .text-column.mirror {
+    order: initial;
+  }
+
+  .scenes-column,
+  .scenes-column.mirror {
+    order: initial;
+    margin-top: 26px;
+  }
+
+  .cutout-wrapper {
+    position: static;
+    margin: 0 auto 24px;
+  }
+
+  .hero-cutout {
+    max-width: 260px;
+  }
+
+  .text-panel {
+    padding: 28px 22px;
+  }
+
+  .contribute-card form {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive 768px */
+
+@media (max-width: 768px) {
+  header {
+    padding: 12px 16px;
+  }
+
+  header h1 {
+    font-size: 1.2em;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 0.8em;
+  }
+
+  .hero-section {
+    height: 46vh;
+    margin-bottom: 30px;
+  }
+
+  .hero-section h2 {
+    font-size: 2em;
+    letter-spacing: 3px;
+  }
+
+  .content-section {
+    padding: 40px 16px;
+  }
+
+  .scene-item img {
+    height: 200px;
+  }
+
+  .contribute-section {
+    padding: 40px 16px 50px;
+  }
+
+  .modal-content {
+    padding: 30px 20px;
+  }
+}
